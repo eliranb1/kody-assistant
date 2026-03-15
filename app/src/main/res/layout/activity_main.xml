@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#1A1A2E" android:layoutDirection="rtl">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🎙️ קודי" android:textSize="48sp" android:textColor="#FFFFFF"
+            android:textStyle="bold" android:layout_marginTop="32dp" android:gravity="center"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="עוזר קולי חכם" android:textSize="16sp" android:textColor="#8888AA"
+            android:layout_marginTop="4dp"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="32dp"
+            app:cardBackgroundColor="#16213E" app:cardCornerRadius="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="⭕ קודי כבוי"
+                    android:textSize="18sp" android:textColor="#FFFFFF" android:textStyle="bold"
+                    android:layout_gravity="end"/>
+                <TextView android:id="@+id/tvWakeWord" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="אמור היי קודי להפעלה"
+                    android:textSize="14sp" android:textColor="#8888AA" android:layout_marginTop="8dp"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToggle" android:layout_width="match_parent"
+            android:layout_height="64dp" android:layout_marginTop="24dp"
+            android:text="הפעל את קודי" android:textSize="18sp" android:textColor="#FFFFFF"
+            app:backgroundTint="#E94560" app:cornerRadius="16dp"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            app:cardBackgroundColor="#0F3460" app:cardCornerRadius="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:id="@+id/tvAccessibilityStatus" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="⚠️ נגישות נדרשת"
+                    android:textSize="14sp" android:textColor="#FFCC00" android:layout_gravity="end"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAccessibility" android:layout_width="match_parent"
+                    android:layout_height="48dp" android:layout_marginTop="12dp"
+                    android:text="פתח הגדרות נגישות" android:textSize="14sp"
+                    app:backgroundTint="#1A1A2E" app:cornerRadius="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            app:cardBackgroundColor="#16213E" app:cardCornerRadius="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="פקודות לדוגמה" android:textSize="16sp" android:textColor="#FFFFFF"
+                    android:textStyle="bold" android:layout_gravity="end"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="היי קודי, הדלק פנס\nהיי קודי, התקשר ל...\nהיי קודי, נתק שיחה\nהיי קודי, הפעל מוזיקה\nהיי קודי, פתח וואטסאפ\nהיי קודי, מה השעה"
+                    android:textSize="13sp" android:textColor="#AAAACC" android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp" android:layout_gravity="end"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="קודי v1.0" android:textSize="12sp" android:textColor="#555577"
+            android:layout_marginTop="24dp" android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>
